@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Temperature Converter</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="heading">
+      <h2>Temperature Converter</h2>
+    </div>
+
+    <div class="form">
+      <form>
+        <div class="box">
+          <label for="from">From : </label>
+          <select name="from" id="from">
+            <option value="Kelvin">Kelvin</option>
+            <option value="Celcius">Celcius</option>
+            <option value="Faranheit">Faranheit</option>
+          </select>
+          <input
+            class="input"
+            type="number"
+            name="input"
+            placeholder="Enter Temperature"
+            required
+          />
+          <label for="to"> To : </label>
+          <select name="to" id="to">
+            <option value="Kelvin">Kelvin</option>
+            <option value="Celcius">Celcius</option>
+
+            <option value="Faranheit">Faranheit</option>
+          </select>
+          <input
+            class="output"
+            type="number"
+            name="output"
+            placeholder="Output"
+            readonly
+          />
+        </div>
+        <button type="button" onclick="Convert()">Convert</button>
+      </form>
+    </div>
+    <br /><br /><br /><br />
+
+    <footer>x--x--Abhay Chavan --x--x</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
